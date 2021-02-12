@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(242, 228, 228);
+}
+
+/* welcome back h1 */
+h1{
+    
+    text-align: center;
+    border-radius: 4%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+/* like page, log out page */
+.navigation{
+    text-align: center;
+}
+/* forsøg på at lave en farve rundt om boksen */
+.localStorageTable{
+    background-color: black;
+}
+/* tilpasning af profilbillede */
+.profile__img {
+   text-align: center;
+   border-radius: 50%;
+}
+
+
+/* vil ikke fungere med at sætte billedteksen i midten */
+.profile_text{
+    text-align: center;
+    
+}
+
+.update__form{
+        display: inline;
+        text-align: center;
+}

@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(242, 228, 228);
+}
+
+/* let the love begin h1 */
+h1 {
+    text-align: center;
+    position:right;
+    color: rgb(155, 8, 8);
+    
+}
+
+
+
+/* sidens profil & logout navigation */
+.navigation{ 
+    text-align: center;
+  
+      
+
+}
+
+
+
+
+.likeBtn{ 
+    color: rgb(61, 50, 216);
+    position: fixed;
+    left: 45%;
+    top: 79%;
+    
+}
+
+
+.dislikeBtn{ 
+    color: red;
+    position: fixed;
+    left: 48%;
+    top: 79%;
+}
+
+/* Users img, som i dette tilfælde er denne kvinde */
+.Users img{ 
+    margin-right: 33%;
+    margin-left: 33%;
+    display: block;
+    text-align: center;
+}
+
+.Heart img{
+    text-align:left;
+
+
+} 

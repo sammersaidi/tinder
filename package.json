@@ -1,0 +1,28 @@
+{
+  "name": "eksamen2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammersaidi/tinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sammersaidi/tinder/issues"
+  },
+  "homepage": "https://github.com/sammersaidi/tinder#readme",
+  "dependencies": {
+    "@material-ui/icons": "^4.11.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

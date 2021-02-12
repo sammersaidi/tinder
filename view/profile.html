@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+    <link rel="stylesheet" href="profile.css"/>
+    <script src="../controller/profile.js"></script>
+</head>
+
+<body>
+
+    <h1>Welcome back</h1>
+    
+        <!-- navigation fra profilsiden til likes eller for at logge ud -->
+    <header class="header">
+        <nav class="navigation">
+          <a class="like_link" href="like.html"> Like page </a>
+          <a class="logOut__link" href="./index.html"> Log out </a>
+        </nav>
+    </header>
+
+        <!-- denne division bliver lavet, så vi kan ændre i profilen -->
+        <!-- skal lige undersøges om det fungerer -->
+
+         <!-- Herefter giver vi vores profilbillede en div samt en klasse, på denne måde kan vi manipulere med billedet på CSS  -->
+        <div class="profile__img">
+            <h3 class="profile__text"> My profile</h3>
+            <img class="profile__img" src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5ed00f17d4a99d0006d2e738%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D154%26cropX2%3D4820%26cropY1%3D651%26cropY2%3D5314" />    
+        </div>
+
+                <!-- Making a form so user can update informations-->
+        <div class="update__form">
+        <span>   
+        <h3> Update your information here:</h3>
+            <!-- Making the buttons where user can give inputs-->
+        <p>
+        <input type="text" id="updateFname" placeholder="Name" />
+        </p>
+        <p>
+        <input type="text" id="updateEmail" placeholder="Email" />
+        </p>
+        <p>
+        <input type="text" id="updatePassword" placeholder="Password" />
+        </p>
+        <p>
+        <input type="text" id="updateAge" placeholder="age" />
+        </p>
+        <p>
+            <input type="button" value="Update" id="update" type="submit" onclick="updateInfo()"></input>
+            <button id="reload" type="button" onclick="reload()">See changes</button>
+        </p>
+         </span>
+         <span>
+        
+            <!--Making the division in the profile page to see my matches-->
+        <div class="myMatches">
+            <h2> My matches </h2>
+            <p id="matches"></p>
+            <!--  Printing the match values from local storage/User-->
+            <script>
+            document.getElementById("matches").innerHTML = "matches: " + localStorage.getItem("kim")
+            
+            </script>
+            </div>
+
+
+    <!-- Delete my user division via a button and logging the person out -->
+    <div class="delete__User">
+    <input id="deleteBtn" type="button" value="Delete profile" onclick="deleteUser()"></button>
+
+         </span>
+        </div>
+  
+      
+
+</div>
+</body>
+</html>
